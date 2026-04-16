@@ -115,15 +115,15 @@ internal struct HelpGenerator {
       var description: String {
         switch self {
         case .positionalArguments:
-          return "Arguments"
+          return String(localized: "Arguments")
         case .subcommands:
-          return "Subcommands"
+          return String(localized: "Subcommands")
         case .options:
-          return "Options"
+          return String(localized: "Options")
         case .title(let name):
           return name
         case .groupedSubcommands(let name):
-          return "\(name) Subcommands"
+          return String(localized: "\(name) Subcommands")
         }
       }
     }
@@ -176,7 +176,7 @@ internal struct HelpGenerator {
       .synopsis
       if !currentCommand.configuration.subcommands.isEmpty {
         if usage.last != " " { usage += " " }
-        usage += "<subcommand>"
+        usage += String(localized: "<subcommand>")
       }
       self.usage = usage
     }
@@ -230,23 +230,23 @@ internal struct HelpGenerator {
         allAndDefaultValues = ""
       case (true, false):
         allAndDefaultValues =
-          "(values: \(allValueStrings.joined(separator: ", ")))"
+          String(localized: "values: \(allValueStrings.joined(separator: ", "))")
       case (false, true):
         switch arg.update {
         case .nullary, .unary:
-          allAndDefaultValues = "(default: \(defaultValue))"
+          allAndDefaultValues = String(localized: "default: \(defaultValue)")
         case .optionalUnary:
-          allAndDefaultValues = "(default as flag: \(defaultValue))"
+          allAndDefaultValues = String(localized: "(default as flag: \(defaultValue))")
         }
 
       case (true, true):
         switch arg.update {
         case .nullary, .unary:
           allAndDefaultValues =
-            "(values: \(allValueStrings.joined(separator: ", ")); default: \(defaultValue))"
+            String(localized: "(values: \(allValueStrings.joined(separator: ", ")); default: \(defaultValue))")
         case .optionalUnary:
           allAndDefaultValues =
-            "(values: \(allValueStrings.joined(separator: ", ")); default as flag: \(defaultValue))"
+            String(localized: "(values: \(allValueStrings.joined(separator: ", ")); default as flag: \(defaultValue))")
         }
       }
 
@@ -312,7 +312,7 @@ internal struct HelpGenerator {
             label += ", \(alias)"
           }
           if command == configuration.defaultSubcommand {
-            label += " (default)"
+            label += String(localized: " (default)")
           }
           return Section.Element(
             label: label,
@@ -365,7 +365,7 @@ internal struct HelpGenerator {
 
   func usageMessage() -> String {
     guard !usage.isEmpty else { return "" }
-    return "Usage: \(usage.hangingIndentingEachLine(by: 7))"
+    return String(localized: "Usage: \(usage.hangingIndentingEachLine(by: 7))")
   }
 
   var includesSubcommands: Bool {
@@ -390,7 +390,7 @@ internal struct HelpGenerator {
     let renderedAbstract =
       abstract.isEmpty
       ? ""
-      : "OVERVIEW: \(abstract)".wrapped(to: screenWidth) + "\n\n"
+      : String(localized: "OVERVIEW: \(abstract)").wrapped(to: screenWidth) + "\n\n"
 
     var helpSubcommandMessage = ""
     if includesSubcommands {
@@ -404,14 +404,14 @@ internal struct HelpGenerator {
 
       helpSubcommandMessage = """
 
-          See '\(names.joined(separator: " ")) <subcommand>' for detailed help.
+          \(String(localized: "See '\(names.joined(separator: " ")) <subcommand>' for detailed help."))
         """
     }
 
     let renderedUsage =
       usage.isEmpty
       ? ""
-      : "USAGE: \(usage.hangingIndentingEachLine(by: 7))\n\n"
+      : String(localized: "USAGE: \(usage.hangingIndentingEachLine(by: 7))\n\n")
 
     return """
       \(renderedAbstract)\
@@ -481,7 +481,7 @@ extension BidirectionalCollection where Element == ParsableCommand.Type {
       help: .init(
         allValueStrings: [],
         options: [.isOptional],
-        help: "Show the version.",
+        help: ArgumentHelp(String(localized: "Show the version.")),
         defaultValue: nil,
         key: InputKey(name: "", parent: nil),
         isComposite: false),
@@ -498,7 +498,7 @@ extension BidirectionalCollection where Element == ParsableCommand.Type {
       help: .init(
         allValueStrings: [],
         options: [.isOptional],
-        help: "Show help information.",
+        help: ArgumentHelp(String(localized: "Show help information.")),
         defaultValue: nil,
         key: InputKey(name: "", parent: nil),
         isComposite: false),
@@ -513,7 +513,7 @@ extension BidirectionalCollection where Element == ParsableCommand.Type {
       help: .init(
         allValueStrings: [],
         options: [.isOptional],
-        help: ArgumentHelp("Dump help information as JSON."),
+        help: ArgumentHelp(String(localized: "Dump help information as JSON.")),
         defaultValue: nil,
         key: InputKey(name: "", parent: nil),
         isComposite: false),

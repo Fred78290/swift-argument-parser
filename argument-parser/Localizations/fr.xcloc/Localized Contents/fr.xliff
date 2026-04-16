@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="../Sources/ArgumentParser/argument-parser-InfoPlist.xcstrings" source-language="en" target-language="fr" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.4" build-num="17E192"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" translate="no" xml:space="preserve">
+        <source>argument-parser</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" translate="no" xml:space="preserve">
+        <source/>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="../Sources/ArgumentParser/Localizable.xcstrings" source-language="en" target-language="fr" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.4" build-num="17E192"/>
+    </header>
+    <body>
+      <trans-unit id="  See '%@ %@' for more information." xml:space="preserve">
+        <source>  See '%1$@ %2$@' for more information.</source>
+        <note from="auto-generated">A line that provides more information about a command's help.</note>
+      </trans-unit>
+      <trans-unit id=" (default)" xml:space="preserve">
+        <source> (default)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ &lt;options&gt;" xml:space="preserve">
+        <source>%@ &lt;options&gt;</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Subcommands" xml:space="preserve">
+        <source>%@ Subcommands</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ [&lt;options&gt;] %@" xml:space="preserve">
+        <source>%1$@ [&lt;options&gt;] %2$@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld unexpected arguments: '%@'" xml:space="preserve">
+        <source>%1$lld unexpected arguments: '%2$@'</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="(default as flag: %@)" xml:space="preserve">
+        <source>(default as flag: %@)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="(values: %@; default as flag: %@)" xml:space="preserve">
+        <source>(values: %1$@; default as flag: %2$@)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="(values: %@; default: %@)" xml:space="preserve">
+        <source>(values: %1$@; default: %2$@)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="&lt;command&gt;" xml:space="preserve">
+        <source>&lt;command&gt;</source>
+        <note from="auto-generated">Name of the tool.</note>
+      </trans-unit>
+      <trans-unit id="&lt;subcommand&gt;" xml:space="preserve">
+        <source>&lt;subcommand&gt;</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Arguments" xml:space="preserve">
+        <source>Arguments</source>
+        <note from="auto-generated">Title of the help section that lists positional arguments.</note>
+      </trans-unit>
+      <trans-unit id="Can't autodetect a supported shell." xml:space="preserve">
+        <source>Can't autodetect a supported shell.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Can't generate completion scripts for '%@'." xml:space="preserve">
+        <source>Can't generate completion scripts for '%@'.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Dump help information as JSON." xml:space="preserve">
+        <source>Dump help information as JSON.</source>
+        <note from="auto-generated">Help text for the experimental command to dump help information as JSON.</note>
+      </trans-unit>
+      <trans-unit id="Help:  %@&#10;" xml:space="preserve">
+        <source>Help:  %@
+</source>
+        <note from="auto-generated">The help message is optional.</note>
+      </trans-unit>
+      <trans-unit id="Internal error. Invalid state while parsing command-line arguments." xml:space="preserve">
+        <source>Internal error. Invalid state while parsing command-line arguments.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Internal error. Parsing command-line arguments hit unimplemented code path." xml:space="preserve">
+        <source>Internal error. Parsing command-line arguments hit unimplemented code path.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Invalid option:" xml:space="preserve">
+        <source>Invalid option:</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Missing expected argument '%@'" xml:space="preserve">
+        <source>Missing expected argument '%@'</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Missing one of: '%@'" xml:space="preserve">
+        <source>Missing one of: '%@'</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Missing required subcommand." xml:space="preserve">
+        <source>Missing required subcommand.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Missing value for '%@ &lt;%@&gt;'" xml:space="preserve">
+        <source>Missing value for '%1$@ &lt;%2$@&gt;'</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Missing value for '%@'" xml:space="preserve">
+        <source>Missing value for '%@'</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No value set for non-argument var %@. Replace with a static variable, or let constant." xml:space="preserve">
+        <source>No value set for non-argument var %@. Replace with a static variable, or let constant.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="OVERVIEW: %@" xml:space="preserve">
+        <source>OVERVIEW: %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Options" xml:space="preserve">
+        <source>Options</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Please use --generate-completion-script=&lt;shell&gt; with one of:" xml:space="preserve">
+        <source>Please use --generate-completion-script=&lt;shell&gt; with one of:</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="See '%@ &lt;subcommand&gt;' for detailed help." xml:space="preserve">
+        <source>See '%@ &lt;subcommand&gt;' for detailed help.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show help information." xml:space="preserve">
+        <source>Show help information.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show the version." xml:space="preserve">
+        <source>Show the version.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Subcommands" xml:space="preserve">
+        <source>Subcommands</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The option '%@' does not take any value, but '%@' was specified." xml:space="preserve">
+        <source>The option '%1$@' does not take any value, but '%2$@' was specified.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="USAGE: %@&#10;&#10;" xml:space="preserve">
+        <source>USAGE: %@
+
+</source>
+        <note from="auto-generated">A heading for the usage section of the help screen.</note>
+      </trans-unit>
+      <trans-unit id="Unexpected argument '%@'" xml:space="preserve">
+        <source>Unexpected argument '%@'</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unknown option '%@'" xml:space="preserve">
+        <source>Unknown option '%@'</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unknown option '%@'. Did you mean '%@'?" xml:space="preserve">
+        <source>Unknown option '%1$@'. Did you mean '%2$@'?</source>
+        <note from="auto-generated">Error message when a user passes an option</note>
+      </trans-unit>
+      <trans-unit id="Unspecified version" xml:space="preserve">
+        <source>Unspecified version</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Usage: %@" xml:space="preserve">
+        <source>Usage: %@</source>
+        <note from="auto-generated">The usage message that appears in the help.</note>
+      </trans-unit>
+      <trans-unit id="default: %@" xml:space="preserve">
+        <source>default: %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="or: %@ in '%@'" xml:space="preserve">
+        <source>or: %1$@ in '%2$@'</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="position %@" xml:space="preserve">
+        <source>position %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="preferredName cannot be nil for named arguments" xml:space="preserve">
+        <source>preferredName cannot be nil for named arguments</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="values: %@" xml:space="preserve">
+        <source>values: %@</source>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
