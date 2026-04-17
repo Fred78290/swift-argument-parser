@@ -115,15 +115,15 @@ internal struct HelpGenerator {
       var description: String {
         switch self {
         case .positionalArguments:
-          return String(localized: "Arguments")
+          return String.localize("Arguments")
         case .subcommands:
-          return String(localized: "Subcommands")
+          return String.localize("Subcommands")
         case .options:
-          return String(localized: "Options")
+          return String.localize("Options")
         case .title(let name):
           return name
         case .groupedSubcommands(let name):
-          return String(localized: "\(name) Subcommands")
+          return String.localize("%@ Subcommands", name)
         }
       }
     }
@@ -176,7 +176,7 @@ internal struct HelpGenerator {
       .synopsis
       if !currentCommand.configuration.subcommands.isEmpty {
         if usage.last != " " { usage += " " }
-        usage += String(localized: "<subcommand>")
+        usage += String.localize("<subcommand>")
       }
       self.usage = usage
     }
@@ -229,24 +229,21 @@ internal struct HelpGenerator {
       case (false, false):
         allAndDefaultValues = ""
       case (true, false):
-        allAndDefaultValues =
-          String(localized: "values: \(allValueStrings.joined(separator: ", "))")
+        allAndDefaultValues = String.localize("values: %@", allValueStrings.joined(separator: ", "))
       case (false, true):
         switch arg.update {
         case .nullary, .unary:
-          allAndDefaultValues = String(localized: "default: \(defaultValue)")
+          allAndDefaultValues = String.localize("default: %@", defaultValue)
         case .optionalUnary:
-          allAndDefaultValues = String(localized: "(default as flag: \(defaultValue))")
+          allAndDefaultValues = String.localize("(default as flag: %@", defaultValue)
         }
 
       case (true, true):
         switch arg.update {
         case .nullary, .unary:
-          allAndDefaultValues =
-            String(localized: "(values: \(allValueStrings.joined(separator: ", ")); default: \(defaultValue))")
+          allAndDefaultValues = String.localize("(values: %@; default: %@)", allValueStrings.joined(separator: ", "), defaultValue)
         case .optionalUnary:
-          allAndDefaultValues =
-            String(localized: "(values: \(allValueStrings.joined(separator: ", ")); default as flag: \(defaultValue))")
+          allAndDefaultValues = String.localize("(values: %@; default as flag: %@)", allValueStrings.joined(separator: ", "), defaultValue)
         }
       }
 
@@ -312,7 +309,7 @@ internal struct HelpGenerator {
             label += ", \(alias)"
           }
           if command == configuration.defaultSubcommand {
-            label += String(localized: " (default)")
+            label += String.localize(" (default)")
           }
           return Section.Element(
             label: label,
@@ -365,7 +362,7 @@ internal struct HelpGenerator {
 
   func usageMessage() -> String {
     guard !usage.isEmpty else { return "" }
-    return String(localized: "Usage: \(usage.hangingIndentingEachLine(by: 7))")
+    return String.localize("Usage: %@", usage.hangingIndentingEachLine(by: 7))
   }
 
   var includesSubcommands: Bool {
@@ -390,7 +387,7 @@ internal struct HelpGenerator {
     let renderedAbstract =
       abstract.isEmpty
       ? ""
-      : String(localized: "OVERVIEW: \(abstract)").wrapped(to: screenWidth) + "\n\n"
+      : String.localize("OVERVIEW: %@", abstract).wrapped(to: screenWidth) + "\n\n"
 
     var helpSubcommandMessage = ""
     if includesSubcommands {
@@ -404,14 +401,14 @@ internal struct HelpGenerator {
 
       helpSubcommandMessage = """
 
-          \(String(localized: "See '\(names.joined(separator: " ")) <subcommand>' for detailed help."))
+          \(String.localize("See '%@ <subcommand>' for detailed help.", names.joined(separator: " ")))
         """
     }
 
     let renderedUsage =
       usage.isEmpty
       ? ""
-      : String(localized: "USAGE: \(usage.hangingIndentingEachLine(by: 7))\n\n")
+      : String.localize("USAGE: %@\n\n", usage.hangingIndentingEachLine(by: 7))
 
     return """
       \(renderedAbstract)\
@@ -481,7 +478,7 @@ extension BidirectionalCollection where Element == ParsableCommand.Type {
       help: .init(
         allValueStrings: [],
         options: [.isOptional],
-        help: ArgumentHelp(String(localized: "Show the version.")),
+        help: ArgumentHelp(String.localize("Show the version.")),
         defaultValue: nil,
         key: InputKey(name: "", parent: nil),
         isComposite: false),
@@ -498,7 +495,7 @@ extension BidirectionalCollection where Element == ParsableCommand.Type {
       help: .init(
         allValueStrings: [],
         options: [.isOptional],
-        help: ArgumentHelp(String(localized: "Show help information.")),
+        help: ArgumentHelp(String.localize("Show help information.")),
         defaultValue: nil,
         key: InputKey(name: "", parent: nil),
         isComposite: false),
@@ -513,7 +510,7 @@ extension BidirectionalCollection where Element == ParsableCommand.Type {
       help: .init(
         allValueStrings: [],
         options: [.isOptional],
-        help: ArgumentHelp(String(localized: "Dump help information as JSON.")),
+        help: ArgumentHelp(String.localize("Dump help information as JSON.")),
         defaultValue: nil,
         key: InputKey(name: "", parent: nil),
         isComposite: false),

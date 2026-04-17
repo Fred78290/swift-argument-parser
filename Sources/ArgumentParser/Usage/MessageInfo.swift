@@ -41,7 +41,7 @@ enum MessageInfo {
           commandStack
           .map { $0.configuration.version }
           .last(where: { !$0.isEmpty })
-          ?? String(localized: "Unspecified version")
+          ?? String.localize("Unspecified version")
         self = .help(text: versionString)
         return
 
@@ -88,7 +88,7 @@ enum MessageInfo {
         usage += "\n"
       }
       usage +=
-        String(localized: "  See '\(commandNames) \(helpName.synopsisString)' for more information.")
+      String.localize("  See '%@ %@' for more information.", commandNames, helpName.synopsisString)
     }
 
     // Parsing errors and user-thrown validation errors have the usage
@@ -161,7 +161,7 @@ enum MessageInfo {
     case .help(let text):
       return text
     case .validation(let message, let usage, let help):
-      let helpMessage = help.isEmpty ? "" : String(localized: "Help:  \(help)\n")
+      let helpMessage = help.isEmpty ? "" : String.localize("Help:  %@\n", help)
       let errorMessage =
         message.isEmpty ? "" : "\(args._errorPrefix)\(message)\n"
       return errorMessage + helpMessage + usage
