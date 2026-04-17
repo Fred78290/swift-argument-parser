@@ -14,9 +14,6 @@ import PackageDescription
 
 var package = Package(
   name: "swift-argument-parser",
-	platforms: [
-		.macOS(.v12), .iOS(.v15), .tvOS(.v15), .watchOS(.v8)
-	],
   products: [
     .library(
       name: "ArgumentParser",
