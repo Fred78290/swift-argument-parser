@@ -31,7 +31,7 @@ var package = Package(
     .target(
       name: "ArgumentParser",
       dependencies: ["ArgumentParserToolInfo"],
-      exclude: ["CMakeLists.txt"]),
+      exclude: ["CMakeLists.txt", "Localizable.xcstrings"]),
     .target(
       name: "ArgumentParserTestHelpers",
       dependencies: ["ArgumentParser", "ArgumentParserToolInfo"],
