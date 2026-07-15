@@ -280,6 +280,8 @@ extension ErrorMessageGenerator {
 
   var unsupportedAutodetectedShell: String {
     """
+    \(String.localize("Please use --generate-completion-script=<shell> with one of:"))
+        \(CompletionShell.allCases.map { $0.rawValue }.joined(separator: " "))
     \(String.localize("Can't autodetect a supported shell."))
     """
   }
