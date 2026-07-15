@@ -256,3 +256,40 @@ extension StringProtocol where SubSequence == Substring {
     isEmpty ? nil : self
   }
 }
+
+extension String {
+  static func localize(_ key: StaticString, _ arguments: any CVarArg...) -> String {
+    // Obtain the format string. On newer OS versions, prefer String(localized:),
+    // otherwise fall back to the key itself.
+    let formatString: String
+
+    if #available(macOS 12, iOS 15, tvOS 15, watchOS 8, *) {
+      formatString = String(localized: key, defaultValue: String.LocalizationValue(stringLiteral: key.description))
+    } else {
+      formatString = key.description
+    }
+
+    return String(format: formatString, arguments: arguments)
+  }
+}
+
+extension Character {
+  /// Returns a Boolean value indicating whether this character is valid for the
+  /// command-line name of an option or flag.
+  ///
+  /// Only ASCII letters, numbers, dashes, and the underscore are valid name
+  /// characters.
+  var isValidForName: Bool {
+    guard isASCII, let firstScalar = unicodeScalars.first else { return false }
+    switch firstScalar.value {
+    case 0x41...0x5A,  // uppercase
+      0x61...0x7A,  // lowercase
+      0x30...0x39,  // numbers
+      0x5F,  // underscore
+      0x2D:  // dash
+      return true
+    default:
+      return false
+    }
+  }
+}

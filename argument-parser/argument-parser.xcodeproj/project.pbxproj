@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BA9A0082F91308E009EF4B3 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FF92F91308E009EF4B3 /* SequenceExtensions.swift */; };
+		9BA9A0092F91308E009EF4B3 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FF02F91308E009EF4B3 /* HelpCommand.swift */; };
+		9BA9A00A2F91308E009EF4B3 /* InputOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FE82F91308E009EF4B3 /* InputOrigin.swift */; };
+		9BA9A00B2F91308E009EF4B3 /* CompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FCB2F91308E009EF4B3 /* CompletionsGenerator.swift */; };
+		9BA9A00C2F91308E009EF4B3 /* AsyncParsableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FDB2F91308E009EF4B3 /* AsyncParsableCommand.swift */; };
+		9BA9A00D2F91308E009EF4B3 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FFC2F91308E009EF4B3 /* Tree.swift */; };
+		9BA9A00E2F91308E009EF4B3 /* NonsenseFlagsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9A0002F91308E009EF4B3 /* NonsenseFlagsValidator.swift */; };
+		9BA9A00F2F91308E009EF4B3 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FE62F91308E009EF4B3 /* CommandParser.swift */; };
+		9BA9A0102F91308E009EF4B3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FFA2F91308E009EF4B3 /* StringExtensions.swift */; };
+		9BA9A0112F91308E009EF4B3 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FEC2F91308E009EF4B3 /* ParserError.swift */; };
+		9BA9A0122F91308E009EF4B3 /* CommandConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FDC2F91308E009EF4B3 /* CommandConfiguration.swift */; };
+		9BA9A0132F91308E009EF4B3 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FD52F91308E009EF4B3 /* Flag.swift */; };
+		9BA9A0142F91308E009EF4B3 /* SplitArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FED2F91308E009EF4B3 /* SplitArguments.swift */; };
+		9BA9A0152F91308E009EF4B3 /* ArgumentDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FE42F91308E009EF4B3 /* ArgumentDefinition.swift */; };
+		9BA9A0162F91308E009EF4B3 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FF52F91308E009EF4B3 /* CollectionExtensions.swift */; };
+		9BA9A0172F91308E009EF4B3 /* ArgumentDiscussion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FD02F91308E009EF4B3 /* ArgumentDiscussion.swift */; };
+		9BA9A0182F91308E009EF4B3 /* ZshCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FCD2F91308E009EF4B3 /* ZshCompletionsGenerator.swift */; };
+		9BA9A0192F91308E009EF4B3 /* CodingKeyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FFF2F91308E009EF4B3 /* CodingKeyValidator.swift */; };
+		9BA9A01A2F91308E009EF4B3 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FF62F91308E009EF4B3 /* Foundation.swift */; };
+		9BA9A01B2F91308E009EF4B3 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FD12F91308E009EF4B3 /* ArgumentHelp.swift */; };
+		9BA9A01C2F91308E009EF4B3 /* ParsableArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FE02F91308E009EF4B3 /* ParsableArguments.swift */; };
+		9BA9A01D2F91308E009EF4B3 /* AsyncCompletionsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FFE2F91308E009EF4B3 /* AsyncCompletionsValidator.swift */; };
+		9BA9A01E2F91308E009EF4B3 /* FishCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FCC2F91308E009EF4B3 /* FishCompletionsGenerator.swift */; };
+		9BA9A01F2F91308E009EF4B3 /* ArgumentVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FD22F91308E009EF4B3 /* ArgumentVisibility.swift */; };
+		9BA9A0202F91308E009EF4B3 /* OptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FD82F91308E009EF4B3 /* OptionGroup.swift */; };
+		9BA9A0212F91308E009EF4B3 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9A0062F91308E009EF4B3 /* Documentation.docc */; };
+		9BA9A0222F91308E009EF4B3 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FF82F91308E009EF4B3 /* Platform.swift */; };
+		9BA9A0232F91308E009EF4B3 /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FF22F91308E009EF4B3 /* MessageInfo.swift */; };
+		9BA9A0242F91308E009EF4B3 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FD72F91308E009EF4B3 /* Option.swift */; };
+		9BA9A0252F91308E009EF4B3 /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FFB2F91308E009EF4B3 /* SwiftExtensions.swift */; };
+		9BA9A0262F91308E009EF4B3 /* ParsableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FE12F91308E009EF4B3 /* ParsableCommand.swift */; };
+		9BA9A0272F91308E009EF4B3 /* UniqueNamesValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9A0032F91308E009EF4B3 /* UniqueNamesValidator.swift */; };
+		9BA9A0282F91308E009EF4B3 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FCF2F91308E009EF4B3 /* Argument.swift */; };
+		9BA9A0292F91308E009EF4B3 /* ParentCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FD92F91308E009EF4B3 /* ParentCommand.swift */; };
+		9BA9A02A2F91308E009EF4B3 /* UsageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FF32F91308E009EF4B3 /* UsageGenerator.swift */; };
+		9BA9A02B2F91308E009EF4B3 /* ParsedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FEB2F91308E009EF4B3 /* ParsedValues.swift */; };
+		9BA9A02C2F91308E009EF4B3 /* CompletionKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FD32F91308E009EF4B3 /* CompletionKind.swift */; };
+		9BA9A02D2F91308E009EF4B3 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FD42F91308E009EF4B3 /* Errors.swift */; };
+		9BA9A02E2F91308E009EF4B3 /* PositionalArgumentsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9A0022F91308E009EF4B3 /* PositionalArgumentsValidator.swift */; };
+		9BA9A02F2F91308E009EF4B3 /* ParsableArgumentsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9A0012F91308E009EF4B3 /* ParsableArgumentsValidation.swift */; };
+		9BA9A0302F91308E009EF4B3 /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FF72F91308E009EF4B3 /* Mutex.swift */; };
+		9BA9A0312F91308E009EF4B3 /* CommandGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FDD2F91308E009EF4B3 /* CommandGroup.swift */; };
+		9BA9A0322F91308E009EF4B3 /* ArgumentDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FE32F91308E009EF4B3 /* ArgumentDecoder.swift */; };
+		9BA9A0332F91308E009EF4B3 /* ArgumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FE52F91308E009EF4B3 /* ArgumentSet.swift */; };
+		9BA9A0342F91308E009EF4B3 /* EnumerableFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FDE2F91308E009EF4B3 /* EnumerableFlag.swift */; };
+		9BA9A0352F91308E009EF4B3 /* HelpGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FF12F91308E009EF4B3 /* HelpGenerator.swift */; };
+		9BA9A0362F91308E009EF4B3 /* BashCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FCA2F91308E009EF4B3 /* BashCompletionsGenerator.swift */; };
+		9BA9A0372F91308E009EF4B3 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FE92F91308E009EF4B3 /* Name.swift */; };
+		9BA9A0382F91308E009EF4B3 /* DumpHelpGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FEF2F91308E009EF4B3 /* DumpHelpGenerator.swift */; };
+		9BA9A0392F91308E009EF4B3 /* ExpressibleByArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FDF2F91308E009EF4B3 /* ExpressibleByArgument.swift */; };
+		9BA9A03A2F91308E009EF4B3 /* Parsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FEA2F91308E009EF4B3 /* Parsed.swift */; };
+		9BA9A03B2F91308E009EF4B3 /* NameSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FD62F91308E009EF4B3 /* NameSpecification.swift */; };
+		9BA9A03C2F91308E009EF4B3 /* InputKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA99FE72F91308E009EF4B3 /* InputKey.swift */; };
+		9BA9A03D2F91308E009EF4B3 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9BA9A0052F91308E009EF4B3 /* CMakeLists.txt */; };
+		9BA9A04A2F91322B009EF4B3 /* ToolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9A03F2F913173009EF4B3 /* ToolInfo.swift */; };
+		9BA9A04C2F91324B009EF4B3 /* libArgumentParserToolInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA9A0462F913220009EF4B3 /* libArgumentParserToolInfo.a */; };
+		9BA9A0502F9132CF009EF4B3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9BA9A04F2F9132CF009EF4B3 /* Localizable.xcstrings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BA9A04D2F91324B009EF4B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BA99FBB2F913063009EF4B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BA9A0452F913220009EF4B3;
+			remoteInfo = ArgumentParserToolInfo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9BA99FC32F913063009EF4B3 /* argument-parser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "argument-parser.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA99FCA2F91308E009EF4B3 /* BashCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BashCompletionsGenerator.swift; sourceTree = "<group>"; };
+		9BA99FCB2F91308E009EF4B3 /* CompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionsGenerator.swift; sourceTree = "<group>"; };
+		9BA99FCC2F91308E009EF4B3 /* FishCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCompletionsGenerator.swift; sourceTree = "<group>"; };
+		9BA99FCD2F91308E009EF4B3 /* ZshCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZshCompletionsGenerator.swift; sourceTree = "<group>"; };
+		9BA99FCF2F91308E009EF4B3 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
+		9BA99FD02F91308E009EF4B3 /* ArgumentDiscussion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDiscussion.swift; sourceTree = "<group>"; };
+		9BA99FD12F91308E009EF4B3 /* ArgumentHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentHelp.swift; sourceTree = "<group>"; };
+		9BA99FD22F91308E009EF4B3 /* ArgumentVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentVisibility.swift; sourceTree = "<group>"; };
+		9BA99FD32F91308E009EF4B3 /* CompletionKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionKind.swift; sourceTree = "<group>"; };
+		9BA99FD42F91308E009EF4B3 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		9BA99FD52F91308E009EF4B3 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		9BA99FD62F91308E009EF4B3 /* NameSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpecification.swift; sourceTree = "<group>"; };
+		9BA99FD72F91308E009EF4B3 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		9BA99FD82F91308E009EF4B3 /* OptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionGroup.swift; sourceTree = "<group>"; };
+		9BA99FD92F91308E009EF4B3 /* ParentCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCommand.swift; sourceTree = "<group>"; };
+		9BA99FDB2F91308E009EF4B3 /* AsyncParsableCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncParsableCommand.swift; sourceTree = "<group>"; };
+		9BA99FDC2F91308E009EF4B3 /* CommandConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandConfiguration.swift; sourceTree = "<group>"; };
+		9BA99FDD2F91308E009EF4B3 /* CommandGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandGroup.swift; sourceTree = "<group>"; };
+		9BA99FDE2F91308E009EF4B3 /* EnumerableFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerableFlag.swift; sourceTree = "<group>"; };
+		9BA99FDF2F91308E009EF4B3 /* ExpressibleByArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressibleByArgument.swift; sourceTree = "<group>"; };
+		9BA99FE02F91308E009EF4B3 /* ParsableArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArguments.swift; sourceTree = "<group>"; };
+		9BA99FE12F91308E009EF4B3 /* ParsableCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableCommand.swift; sourceTree = "<group>"; };
+		9BA99FE32F91308E009EF4B3 /* ArgumentDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDecoder.swift; sourceTree = "<group>"; };
+		9BA99FE42F91308E009EF4B3 /* ArgumentDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDefinition.swift; sourceTree = "<group>"; };
+		9BA99FE52F91308E009EF4B3 /* ArgumentSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentSet.swift; sourceTree = "<group>"; };
+		9BA99FE62F91308E009EF4B3 /* CommandParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandParser.swift; sourceTree = "<group>"; };
+		9BA99FE72F91308E009EF4B3 /* InputKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputKey.swift; sourceTree = "<group>"; };
+		9BA99FE82F91308E009EF4B3 /* InputOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOrigin.swift; sourceTree = "<group>"; };
+		9BA99FE92F91308E009EF4B3 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		9BA99FEA2F91308E009EF4B3 /* Parsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsed.swift; sourceTree = "<group>"; };
+		9BA99FEB2F91308E009EF4B3 /* ParsedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedValues.swift; sourceTree = "<group>"; };
+		9BA99FEC2F91308E009EF4B3 /* ParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserError.swift; sourceTree = "<group>"; };
+		9BA99FED2F91308E009EF4B3 /* SplitArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitArguments.swift; sourceTree = "<group>"; };
+		9BA99FEF2F91308E009EF4B3 /* DumpHelpGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumpHelpGenerator.swift; sourceTree = "<group>"; };
+		9BA99FF02F91308E009EF4B3 /* HelpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
+		9BA99FF12F91308E009EF4B3 /* HelpGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpGenerator.swift; sourceTree = "<group>"; };
+		9BA99FF22F91308E009EF4B3 /* MessageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
+		9BA99FF32F91308E009EF4B3 /* UsageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageGenerator.swift; sourceTree = "<group>"; };
+		9BA99FF52F91308E009EF4B3 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
+		9BA99FF62F91308E009EF4B3 /* Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		9BA99FF72F91308E009EF4B3 /* Mutex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mutex.swift; sourceTree = "<group>"; };
+		9BA99FF82F91308E009EF4B3 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		9BA99FF92F91308E009EF4B3 /* SequenceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
+		9BA99FFA2F91308E009EF4B3 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		9BA99FFB2F91308E009EF4B3 /* SwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
+		9BA99FFC2F91308E009EF4B3 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		9BA99FFE2F91308E009EF4B3 /* AsyncCompletionsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCompletionsValidator.swift; sourceTree = "<group>"; };
+		9BA99FFF2F91308E009EF4B3 /* CodingKeyValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingKeyValidator.swift; sourceTree = "<group>"; };
+		9BA9A0002F91308E009EF4B3 /* NonsenseFlagsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonsenseFlagsValidator.swift; sourceTree = "<group>"; };
+		9BA9A0012F91308E009EF4B3 /* ParsableArgumentsValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArgumentsValidation.swift; sourceTree = "<group>"; };
+		9BA9A0022F91308E009EF4B3 /* PositionalArgumentsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionalArgumentsValidator.swift; sourceTree = "<group>"; };
+		9BA9A0032F91308E009EF4B3 /* UniqueNamesValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueNamesValidator.swift; sourceTree = "<group>"; };
+		9BA9A0052F91308E009EF4B3 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9BA9A0062F91308E009EF4B3 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
+		9BA9A03E2F913173009EF4B3 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9BA9A03F2F913173009EF4B3 /* ToolInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolInfo.swift; sourceTree = "<group>"; };
+		9BA9A0462F913220009EF4B3 /* libArgumentParserToolInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libArgumentParserToolInfo.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA9A04F2F9132CF009EF4B3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BA99FC02F913063009EF4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA9A04C2F91324B009EF4B3 /* libArgumentParserToolInfo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA9A0442F913220009EF4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BA99FBA2F913063009EF4B3 = {
+			isa = PBXGroup;
+			children = (
+				9BA9A0402F913173009EF4B3 /* ArgumentParserToolInfo */,
+				9BA9A0072F91308E009EF4B3 /* ArgumentParser */,
+				9BA9A04B2F91324B009EF4B3 /* Frameworks */,
+				9BA99FC42F913063009EF4B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BA99FC42F913063009EF4B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BA99FC32F913063009EF4B3 /* argument-parser.bundle */,
+				9BA9A0462F913220009EF4B3 /* libArgumentParserToolInfo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BA99FCE2F91308E009EF4B3 /* Completions */ = {
+			isa = PBXGroup;
+			children = (
+				9BA99FCA2F91308E009EF4B3 /* BashCompletionsGenerator.swift */,
+				9BA99FCB2F91308E009EF4B3 /* CompletionsGenerator.swift */,
+				9BA99FCC2F91308E009EF4B3 /* FishCompletionsGenerator.swift */,
+				9BA99FCD2F91308E009EF4B3 /* ZshCompletionsGenerator.swift */,
+			);
+			path = Completions;
+			sourceTree = "<group>";
+		};
+		9BA99FDA2F91308E009EF4B3 /* Parsable Properties */ = {
+			isa = PBXGroup;
+			children = (
+				9BA99FCF2F91308E009EF4B3 /* Argument.swift */,
+				9BA99FD02F91308E009EF4B3 /* ArgumentDiscussion.swift */,
+				9BA99FD12F91308E009EF4B3 /* ArgumentHelp.swift */,
+				9BA99FD22F91308E009EF4B3 /* ArgumentVisibility.swift */,
+				9BA99FD32F91308E009EF4B3 /* CompletionKind.swift */,
+				9BA99FD42F91308E009EF4B3 /* Errors.swift */,
+				9BA99FD52F91308E009EF4B3 /* Flag.swift */,
+				9BA99FD62F91308E009EF4B3 /* NameSpecification.swift */,
+				9BA99FD72F91308E009EF4B3 /* Option.swift */,
+				9BA99FD82F91308E009EF4B3 /* OptionGroup.swift */,
+				9BA99FD92F91308E009EF4B3 /* ParentCommand.swift */,
+			);
+			path = "Parsable Properties";
+			sourceTree = "<group>";
+		};
+		9BA99FE22F91308E009EF4B3 /* Parsable Types */ = {
+			isa = PBXGroup;
+			children = (
+				9BA99FDB2F91308E009EF4B3 /* AsyncParsableCommand.swift */,
+				9BA99FDC2F91308E009EF4B3 /* CommandConfiguration.swift */,
+				9BA99FDD2F91308E009EF4B3 /* CommandGroup.swift */,
+				9BA99FDE2F91308E009EF4B3 /* EnumerableFlag.swift */,
+				9BA99FDF2F91308E009EF4B3 /* ExpressibleByArgument.swift */,
+				9BA99FE02F91308E009EF4B3 /* ParsableArguments.swift */,
+				9BA99FE12F91308E009EF4B3 /* ParsableCommand.swift */,
+			);
+			path = "Parsable Types";
+			sourceTree = "<group>";
+		};
+		9BA99FEE2F91308E009EF4B3 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				9BA99FE32F91308E009EF4B3 /* ArgumentDecoder.swift */,
+				9BA99FE42F91308E009EF4B3 /* ArgumentDefinition.swift */,
+				9BA99FE52F91308E009EF4B3 /* ArgumentSet.swift */,
+				9BA99FE62F91308E009EF4B3 /* CommandParser.swift */,
+				9BA99FE72F91308E009EF4B3 /* InputKey.swift */,
+				9BA99FE82F91308E009EF4B3 /* InputOrigin.swift */,
+				9BA99FE92F91308E009EF4B3 /* Name.swift */,
+				9BA99FEA2F91308E009EF4B3 /* Parsed.swift */,
+				9BA99FEB2F91308E009EF4B3 /* ParsedValues.swift */,
+				9BA99FEC2F91308E009EF4B3 /* ParserError.swift */,
+				9BA99FED2F91308E009EF4B3 /* SplitArguments.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		9BA99FF42F91308E009EF4B3 /* Usage */ = {
+			isa = PBXGroup;
+			children = (
+				9BA99FEF2F91308E009EF4B3 /* DumpHelpGenerator.swift */,
+				9BA99FF02F91308E009EF4B3 /* HelpCommand.swift */,
+				9BA99FF12F91308E009EF4B3 /* HelpGenerator.swift */,
+				9BA99FF22F91308E009EF4B3 /* MessageInfo.swift */,
+				9BA99FF32F91308E009EF4B3 /* UsageGenerator.swift */,
+			);
+			path = Usage;
+			sourceTree = "<group>";
+		};
+		9BA99FFD2F91308E009EF4B3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9BA99FF52F91308E009EF4B3 /* CollectionExtensions.swift */,
+				9BA99FF62F91308E009EF4B3 /* Foundation.swift */,
+				9BA99FF72F91308E009EF4B3 /* Mutex.swift */,
+				9BA99FF82F91308E009EF4B3 /* Platform.swift */,
+				9BA99FF92F91308E009EF4B3 /* SequenceExtensions.swift */,
+				9BA99FFA2F91308E009EF4B3 /* StringExtensions.swift */,
+				9BA99FFB2F91308E009EF4B3 /* SwiftExtensions.swift */,
+				9BA99FFC2F91308E009EF4B3 /* Tree.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9BA9A0042F91308E009EF4B3 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				9BA99FFE2F91308E009EF4B3 /* AsyncCompletionsValidator.swift */,
+				9BA99FFF2F91308E009EF4B3 /* CodingKeyValidator.swift */,
+				9BA9A0002F91308E009EF4B3 /* NonsenseFlagsValidator.swift */,
+				9BA9A0012F91308E009EF4B3 /* ParsableArgumentsValidation.swift */,
+				9BA9A0022F91308E009EF4B3 /* PositionalArgumentsValidator.swift */,
+				9BA9A0032F91308E009EF4B3 /* UniqueNamesValidator.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		9BA9A0072F91308E009EF4B3 /* ArgumentParser */ = {
+			isa = PBXGroup;
+			children = (
+				9BA99FCE2F91308E009EF4B3 /* Completions */,
+				9BA99FDA2F91308E009EF4B3 /* Parsable Properties */,
+				9BA99FE22F91308E009EF4B3 /* Parsable Types */,
+				9BA99FEE2F91308E009EF4B3 /* Parsing */,
+				9BA99FF42F91308E009EF4B3 /* Usage */,
+				9BA99FFD2F91308E009EF4B3 /* Utilities */,
+				9BA9A0042F91308E009EF4B3 /* Validators */,
+				9BA9A0052F91308E009EF4B3 /* CMakeLists.txt */,
+				9BA9A0062F91308E009EF4B3 /* Documentation.docc */,
+				9BA9A04F2F9132CF009EF4B3 /* Localizable.xcstrings */,
+			);
+			name = ArgumentParser;
+			path = ../Sources/ArgumentParser;
+			sourceTree = SOURCE_ROOT;
+		};
+		9BA9A0402F913173009EF4B3 /* ArgumentParserToolInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9BA9A03E2F913173009EF4B3 /* CMakeLists.txt */,
+				9BA9A03F2F913173009EF4B3 /* ToolInfo.swift */,
+			);
+			name = ArgumentParserToolInfo;
+			path = ../Sources/ArgumentParserToolInfo;
+			sourceTree = SOURCE_ROOT;
+		};
+		9BA9A04B2F91324B009EF4B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9BA9A0422F913220009EF4B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9BA99FC22F913063009EF4B3 /* argument-parser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA99FC72F913063009EF4B3 /* Build configuration list for PBXNativeTarget "argument-parser" */;
+			buildPhases = (
+				9BA99FBF2F913063009EF4B3 /* Sources */,
+				9BA99FC02F913063009EF4B3 /* Frameworks */,
+				9BA99FC12F913063009EF4B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BA9A04E2F91324B009EF4B3 /* PBXTargetDependency */,
+			);
+			name = "argument-parser";
+			packageProductDependencies = (
+			);
+			productName = "argument-parser";
+			productReference = 9BA99FC32F913063009EF4B3 /* argument-parser.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9BA9A0452F913220009EF4B3 /* ArgumentParserToolInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA9A0472F913220009EF4B3 /* Build configuration list for PBXNativeTarget "ArgumentParserToolInfo" */;
+			buildPhases = (
+				9BA9A0422F913220009EF4B3 /* Headers */,
+				9BA9A0432F913220009EF4B3 /* Sources */,
+				9BA9A0442F913220009EF4B3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArgumentParserToolInfo;
+			packageProductDependencies = (
+			);
+			productName = ArgumentParserToolInfo;
+			productReference = 9BA9A0462F913220009EF4B3 /* libArgumentParserToolInfo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BA99FBB2F913063009EF4B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					9BA99FC22F913063009EF4B3 = {
+						CreatedOnToolsVersion = 26.4;
+					};
+					9BA9A0452F913220009EF4B3 = {
+						CreatedOnToolsVersion = 26.4;
+					};
+				};
+			};
+			buildConfigurationList = 9BA99FBE2F913063009EF4B3 /* Build configuration list for PBXProject "argument-parser" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = 9BA99FBA2F913063009EF4B3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9BA99FC42F913063009EF4B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BA99FC22F913063009EF4B3 /* argument-parser */,
+				9BA9A0452F913220009EF4B3 /* ArgumentParserToolInfo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BA99FC12F913063009EF4B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA9A0502F9132CF009EF4B3 /* Localizable.xcstrings in Resources */,
+				9BA9A03D2F91308E009EF4B3 /* CMakeLists.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BA99FBF2F913063009EF4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA9A0082F91308E009EF4B3 /* SequenceExtensions.swift in Sources */,
+				9BA9A0092F91308E009EF4B3 /* HelpCommand.swift in Sources */,
+				9BA9A00A2F91308E009EF4B3 /* InputOrigin.swift in Sources */,
+				9BA9A00B2F91308E009EF4B3 /* CompletionsGenerator.swift in Sources */,
+				9BA9A00C2F91308E009EF4B3 /* AsyncParsableCommand.swift in Sources */,
+				9BA9A00D2F91308E009EF4B3 /* Tree.swift in Sources */,
+				9BA9A00E2F91308E009EF4B3 /* NonsenseFlagsValidator.swift in Sources */,
+				9BA9A00F2F91308E009EF4B3 /* CommandParser.swift in Sources */,
+				9BA9A0102F91308E009EF4B3 /* StringExtensions.swift in Sources */,
+				9BA9A0112F91308E009EF4B3 /* ParserError.swift in Sources */,
+				9BA9A0122F91308E009EF4B3 /* CommandConfiguration.swift in Sources */,
+				9BA9A0132F91308E009EF4B3 /* Flag.swift in Sources */,
+				9BA9A0142F91308E009EF4B3 /* SplitArguments.swift in Sources */,
+				9BA9A0152F91308E009EF4B3 /* ArgumentDefinition.swift in Sources */,
+				9BA9A0162F91308E009EF4B3 /* CollectionExtensions.swift in Sources */,
+				9BA9A0172F91308E009EF4B3 /* ArgumentDiscussion.swift in Sources */,
+				9BA9A0182F91308E009EF4B3 /* ZshCompletionsGenerator.swift in Sources */,
+				9BA9A0192F91308E009EF4B3 /* CodingKeyValidator.swift in Sources */,
+				9BA9A01A2F91308E009EF4B3 /* Foundation.swift in Sources */,
+				9BA9A01B2F91308E009EF4B3 /* ArgumentHelp.swift in Sources */,
+				9BA9A01C2F91308E009EF4B3 /* ParsableArguments.swift in Sources */,
+				9BA9A01D2F91308E009EF4B3 /* AsyncCompletionsValidator.swift in Sources */,
+				9BA9A01E2F91308E009EF4B3 /* FishCompletionsGenerator.swift in Sources */,
+				9BA9A01F2F91308E009EF4B3 /* ArgumentVisibility.swift in Sources */,
+				9BA9A0202F91308E009EF4B3 /* OptionGroup.swift in Sources */,
+				9BA9A0212F91308E009EF4B3 /* Documentation.docc in Sources */,
+				9BA9A0222F91308E009EF4B3 /* Platform.swift in Sources */,
+				9BA9A0232F91308E009EF4B3 /* MessageInfo.swift in Sources */,
+				9BA9A0242F91308E009EF4B3 /* Option.swift in Sources */,
+				9BA9A0252F91308E009EF4B3 /* SwiftExtensions.swift in Sources */,
+				9BA9A0262F91308E009EF4B3 /* ParsableCommand.swift in Sources */,
+				9BA9A0272F91308E009EF4B3 /* UniqueNamesValidator.swift in Sources */,
+				9BA9A0282F91308E009EF4B3 /* Argument.swift in Sources */,
+				9BA9A0292F91308E009EF4B3 /* ParentCommand.swift in Sources */,
+				9BA9A02A2F91308E009EF4B3 /* UsageGenerator.swift in Sources */,
+				9BA9A02B2F91308E009EF4B3 /* ParsedValues.swift in Sources */,
+				9BA9A02C2F91308E009EF4B3 /* CompletionKind.swift in Sources */,
+				9BA9A02D2F91308E009EF4B3 /* Errors.swift in Sources */,
+				9BA9A02E2F91308E009EF4B3 /* PositionalArgumentsValidator.swift in Sources */,
+				9BA9A02F2F91308E009EF4B3 /* ParsableArgumentsValidation.swift in Sources */,
+				9BA9A0302F91308E009EF4B3 /* Mutex.swift in Sources */,
+				9BA9A0312F91308E009EF4B3 /* CommandGroup.swift in Sources */,
+				9BA9A0322F91308E009EF4B3 /* ArgumentDecoder.swift in Sources */,
+				9BA9A0332F91308E009EF4B3 /* ArgumentSet.swift in Sources */,
+				9BA9A0342F91308E009EF4B3 /* EnumerableFlag.swift in Sources */,
+				9BA9A0352F91308E009EF4B3 /* HelpGenerator.swift in Sources */,
+				9BA9A0362F91308E009EF4B3 /* BashCompletionsGenerator.swift in Sources */,
+				9BA9A0372F91308E009EF4B3 /* Name.swift in Sources */,
+				9BA9A0382F91308E009EF4B3 /* DumpHelpGenerator.swift in Sources */,
+				9BA9A0392F91308E009EF4B3 /* ExpressibleByArgument.swift in Sources */,
+				9BA9A03A2F91308E009EF4B3 /* Parsed.swift in Sources */,
+				9BA9A03B2F91308E009EF4B3 /* NameSpecification.swift in Sources */,
+				9BA9A03C2F91308E009EF4B3 /* InputKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA9A0432F913220009EF4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA9A04A2F91322B009EF4B3 /* ToolInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BA9A04E2F91324B009EF4B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BA9A0452F913220009EF4B3 /* ArgumentParserToolInfo */;
+			targetProxy = 9BA9A04D2F91324B009EF4B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9BA99FC52F913063009EF4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LE7988HTRN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		9BA99FC62F913063009EF4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LE7988HTRN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		9BA99FC82F913063009EF4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LE7988HTRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aldunelabs.caker.argument-parser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9BA99FC92F913063009EF4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LE7988HTRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aldunelabs.caker.argument-parser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		9BA9A0482F913220009EF4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LE7988HTRN;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9BA9A0492F913220009EF4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LE7988HTRN;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BA99FBE2F913063009EF4B3 /* Build configuration list for PBXProject "argument-parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA99FC52F913063009EF4B3 /* Debug */,
+				9BA99FC62F913063009EF4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BA99FC72F913063009EF4B3 /* Build configuration list for PBXNativeTarget "argument-parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA99FC82F913063009EF4B3 /* Debug */,
+				9BA99FC92F913063009EF4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BA9A0472F913220009EF4B3 /* Build configuration list for PBXNativeTarget "ArgumentParserToolInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA9A0482F913220009EF4B3 /* Debug */,
+				9BA9A0492F913220009EF4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BA99FBB2F913063009EF4B3 /* Project object */;
+}

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="../Sources/ArgumentParser/argument-parser-InfoPlist.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.4" build-num="17E192"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" translate="no" xml:space="preserve">
+        <source>argument-parser</source>
+        <target state="new">argument-parser</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" translate="no" xml:space="preserve">
+        <source/>
+        <target state="new"/>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="../Sources/ArgumentParser/Localizable.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.4" build-num="17E192"/>
+    </header>
+    <body>
+      <trans-unit id="  See '%@ %@' for more information." xml:space="preserve">
+        <source>  See '%1$@ %2$@' for more information.</source>
+        <target state="new">  See '%1$@ %2$@' for more information.</target>
+        <note from="auto-generated">A line that provides more information about a command's help.</note>
+      </trans-unit>
+      <trans-unit id=" (default)" xml:space="preserve">
+        <source> (default)</source>
+        <target state="new"> (default)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ &lt;options&gt;" xml:space="preserve">
+        <source>%@ &lt;options&gt;</source>
+        <target state="new">%@ &lt;options&gt;</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Subcommands" xml:space="preserve">
+        <source>%@ Subcommands</source>
+        <target state="new">%@ Subcommands</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ [&lt;options&gt;] %@" xml:space="preserve">
+        <source>%1$@ [&lt;options&gt;] %2$@</source>
+        <target state="new">%1$@ [&lt;options&gt;] %2$@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld unexpected arguments: '%@'" xml:space="preserve">
+        <source>%1$lld unexpected arguments: '%2$@'</source>
+        <target state="new">%1$lld unexpected arguments: '%2$@'</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="(default as flag: %@)" xml:space="preserve">
+        <source>(default as flag: %@)</source>
+        <target state="new">(default as flag: %@)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="(values: %@; default as flag: %@)" xml:space="preserve">
+        <source>(values: %1$@; default as flag: %2$@)</source>
+        <target state="new">(values: %1$@; default as flag: %2$@)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="(values: %@; default: %@)" xml:space="preserve">
+        <source>(values: %1$@; default: %2$@)</source>
+        <target state="new">(values: %1$@; default: %2$@)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="&lt;command&gt;" xml:space="preserve">
+        <source>&lt;command&gt;</source>
+        <target state="new">&lt;command&gt;</target>
+        <note from="auto-generated">Name of the tool.</note>
+      </trans-unit>
+      <trans-unit id="&lt;subcommand&gt;" xml:space="preserve">
+        <source>&lt;subcommand&gt;</source>
+        <target state="new">&lt;subcommand&gt;</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Arguments" xml:space="preserve">
+        <source>Arguments</source>
+        <target state="new">Arguments</target>
+        <note from="auto-generated">Title of the help section that lists positional arguments.</note>
+      </trans-unit>
+      <trans-unit id="Can't autodetect a supported shell." xml:space="preserve">
+        <source>Can't autodetect a supported shell.</source>
+        <target state="new">Can't autodetect a supported shell.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Can't generate completion scripts for '%@'." xml:space="preserve">
+        <source>Can't generate completion scripts for '%@'.</source>
+        <target state="new">Can't generate completion scripts for '%@'.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Dump help information as JSON." xml:space="preserve">
+        <source>Dump help information as JSON.</source>
+        <target state="new">Dump help information as JSON.</target>
+        <note from="auto-generated">Help text for the experimental command to dump help information as JSON.</note>
+      </trans-unit>
+      <trans-unit id="Help:  %@&#10;" xml:space="preserve">
+        <source>Help:  %@
+</source>
+        <target state="new">Help:  %@
+</target>
+        <note from="auto-generated">The help message is optional.</note>
+      </trans-unit>
+      <trans-unit id="Internal error. Invalid state while parsing command-line arguments." xml:space="preserve">
+        <source>Internal error. Invalid state while parsing command-line arguments.</source>
+        <target state="new">Internal error. Invalid state while parsing command-line arguments.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Internal error. Parsing command-line arguments hit unimplemented code path." xml:space="preserve">
+        <source>Internal error. Parsing command-line arguments hit unimplemented code path.</source>
+        <target state="new">Internal error. Parsing command-line arguments hit unimplemented code path.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Invalid option:" xml:space="preserve">
+        <source>Invalid option:</source>
+        <target state="new">Invalid option:</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Missing expected argument '%@'" xml:space="preserve">
+        <source>Missing expected argument '%@'</source>
+        <target state="new">Missing expected argument '%@'</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Missing one of: '%@'" xml:space="preserve">
+        <source>Missing one of: '%@'</source>
+        <target state="new">Missing one of: '%@'</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Missing required subcommand." xml:space="preserve">
+        <source>Missing required subcommand.</source>
+        <target state="new">Missing required subcommand.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Missing value for '%@ &lt;%@&gt;'" xml:space="preserve">
+        <source>Missing value for '%1$@ &lt;%2$@&gt;'</source>
+        <target state="new">Missing value for '%1$@ &lt;%2$@&gt;'</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Missing value for '%@'" xml:space="preserve">
+        <source>Missing value for '%@'</source>
+        <target state="new">Missing value for '%@'</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="No value set for non-argument var %@. Replace with a static variable, or let constant." xml:space="preserve">
+        <source>No value set for non-argument var %@. Replace with a static variable, or let constant.</source>
+        <target state="new">No value set for non-argument var %@. Replace with a static variable, or let constant.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="OVERVIEW: %@" xml:space="preserve">
+        <source>OVERVIEW: %@</source>
+        <target state="new">OVERVIEW: %@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Options" xml:space="preserve">
+        <source>Options</source>
+        <target state="new">Options</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Please use --generate-completion-script=&lt;shell&gt; with one of:" xml:space="preserve">
+        <source>Please use --generate-completion-script=&lt;shell&gt; with one of:</source>
+        <target state="new">Please use --generate-completion-script=&lt;shell&gt; with one of:</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="See '%@ &lt;subcommand&gt;' for detailed help." xml:space="preserve">
+        <source>See '%@ &lt;subcommand&gt;' for detailed help.</source>
+        <target state="new">See '%@ &lt;subcommand&gt;' for detailed help.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show help information." xml:space="preserve">
+        <source>Show help information.</source>
+        <target state="new">Show help information.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show the version." xml:space="preserve">
+        <source>Show the version.</source>
+        <target state="new">Show the version.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Subcommands" xml:space="preserve">
+        <source>Subcommands</source>
+        <target state="new">Subcommands</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The option '%@' does not take any value, but '%@' was specified." xml:space="preserve">
+        <source>The option '%1$@' does not take any value, but '%2$@' was specified.</source>
+        <target state="new">The option '%1$@' does not take any value, but '%2$@' was specified.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="USAGE: %@&#10;&#10;" xml:space="preserve">
+        <source>USAGE: %@
+
+</source>
+        <target state="new">USAGE: %@
+
+</target>
+        <note from="auto-generated">A heading for the usage section of the help screen.</note>
+      </trans-unit>
+      <trans-unit id="Unexpected argument '%@'" xml:space="preserve">
+        <source>Unexpected argument '%@'</source>
+        <target state="new">Unexpected argument '%@'</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unknown option '%@'" xml:space="preserve">
+        <source>Unknown option '%@'</source>
+        <target state="new">Unknown option '%@'</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unknown option '%@'. Did you mean '%@'?" xml:space="preserve">
+        <source>Unknown option '%1$@'. Did you mean '%2$@'?</source>
+        <target state="new">Unknown option '%1$@'. Did you mean '%2$@'?</target>
+        <note from="auto-generated">Error message when a user passes an option</note>
+      </trans-unit>
+      <trans-unit id="Unspecified version" xml:space="preserve">
+        <source>Unspecified version</source>
+        <target state="new">Unspecified version</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Usage: %@" xml:space="preserve">
+        <source>Usage: %@</source>
+        <target state="new">Usage: %@</target>
+        <note from="auto-generated">The usage message that appears in the help.</note>
+      </trans-unit>
+      <trans-unit id="default: %@" xml:space="preserve">
+        <source>default: %@</source>
+        <target state="new">default: %@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="or: %@ in '%@'" xml:space="preserve">
+        <source>or: %1$@ in '%2$@'</source>
+        <target state="new">or: %1$@ in '%2$@'</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="position %@" xml:space="preserve">
+        <source>position %@</source>
+        <target state="new">position %@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="preferredName cannot be nil for named arguments" xml:space="preserve">
+        <source>preferredName cannot be nil for named arguments</source>
+        <target state="new">preferredName cannot be nil for named arguments</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="values: %@" xml:space="preserve">
+        <source>values: %@</source>
+        <target state="new">values: %@</target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

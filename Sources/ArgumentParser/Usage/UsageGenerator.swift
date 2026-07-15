@@ -18,7 +18,7 @@ extension UsageGenerator {
   init(definition: ArgumentSet) {
     let toolName =
       CommandLine._staticArguments[0]
-      .split(separator: "/").last.map(String.init) ?? "<command>"
+      .split(separator: "/").last.map(String.init) ?? String.localize("<command>")
     self.init(toolName: toolName, definition: definition)
   }
 
@@ -59,9 +59,9 @@ extension UsageGenerator {
           options
           .map { $0.synopsis }
           .joined(separator: " ")
-        return "\(toolName) [<options>] \(synopsis)"
+        return String.localize("%@ [<options>] %@", toolName, synopsis)
       }
-      return "\(toolName) <options>"
+      return String.localize("%@ <options>", toolName)
     default:
       let synopsis =
         options
@@ -100,7 +100,7 @@ extension ArgumentDefinition {
     switch kind {
     case .named:
       guard let name = names.preferredName else {
-        fatalError("preferredName cannot be nil for named arguments")
+        fatalError(String.localize("preferredName cannot be nil for named arguments"))
       }
 
       switch update {
@@ -215,11 +215,11 @@ extension ErrorMessageGenerator {
       return unableToParseValueMessage(
         origin: o, name: n, value: v, key: k, error: e)
     case .invalidOption(let str):
-      return "Invalid option: \(str)"
+      return String.localize("Invalid option:") + " \(str)"
     case .nonAlphanumericShortOption(let c):
-      return "Invalid option: -\(c)"
+      return String.localize("Invalid option:") + " -\(c)"
     case .missingSubcommand:
-      return "Missing required subcommand."
+      return String.localize("Missing required subcommand.")
     case .userValidationError(let error):
       return error.describe()
     case .noArguments(let error):
@@ -231,7 +231,7 @@ extension ErrorMessageGenerator {
         return error.describe()
       }
     case .notParentCommand(let parent):
-      return "Command '\(parent)' is not a parent of the current command."
+      return String.localize("Command '%@' is not a parent of the current command.", parent)
     }
   }
 
@@ -272,31 +272,31 @@ extension ErrorMessageGenerator {
 
 extension ErrorMessageGenerator {
   var notImplementedMessage: String {
-    "Internal error. Parsing command-line arguments hit unimplemented code path."
+    String.localize("Internal error. Parsing command-line arguments hit unimplemented code path.")
   }
   var invalidState: String {
-    "Internal error. Invalid state while parsing command-line arguments."
+    String.localize("Internal error. Invalid state while parsing command-line arguments.")
   }
 
   var unsupportedAutodetectedShell: String {
     """
-    Can't autodetect a supported shell.
-    Please use --generate-completion-script=<shell> with one of:
+    \(String.localize("Please use --generate-completion-script=<shell> with one of:"))
         \(CompletionShell.allCases.map { $0.rawValue }.joined(separator: " "))
+    \(String.localize("Can't autodetect a supported shell."))
     """
   }
 
   func unsupportedShell(_ shell: String) -> String {
     """
-    Can't generate completion scripts for '\(shell)'.
-    Please use --generate-completion-script=<shell> with one of:
+    \(String.localize("Can't generate completion scripts for '%@'.", shell))
+    \(String.localize("Please use --generate-completion-script=<shell> with one of:"))
         \(CompletionShell.allCases.map { $0.rawValue }.joined(separator: " "))
     """
   }
 
   func unknownOptionMessage(origin: InputOrigin.Element, name: Name) -> String {
     if case .short = name {
-      return "Unknown option '\(name.synopsisString)'"
+      return String.localize("Unknown option '%@'", name.synopsisString)
     }
 
     // An empirically derived magic number
@@ -323,17 +323,16 @@ extension ErrorMessageGenerator {
       })
 
     if let suggestion = suggestion {
-      return
-        "Unknown option '\(name.synopsisString)'. Did you mean '\(suggestion.synopsisString)'?"
+      return String.localize("Unknown option '%@'. Did you mean '%@'?", name.synopsisString, suggestion.synopsisString)
     }
-    return "Unknown option '\(name.synopsisString)'"
+    return String.localize("Unknown option '%@'", name.synopsisString)
   }
 
   func missingValueForOptionMessage(origin: InputOrigin, name: Name) -> String {
     if let valueName = valueName(for: name) {
-      return "Missing value for '\(name.synopsisString) <\(valueName)>'"
+      return String.localize("Missing value for '%@ <%@>'", name.synopsisString, valueName)
     } else {
-      return "Missing value for '\(name.synopsisString)'"
+      return String.localize("Missing value for '%@'", name.synopsisString)
     }
   }
 
@@ -350,14 +349,14 @@ extension ErrorMessageGenerator {
       name: shortName)
     return """
       \(unknownOptionMessage)
-         or: \(missingValueMessage) in '\(compositeName.synopsisString)'
+         \(String.localize("or: %@ in '%@'", missingValueMessage, compositeName.synopsisString))
       """
   }
 
   func unexpectedValueForOptionMessage(
     origin: InputOrigin.Element, name: Name, value: String
   ) -> String? {
-    "The option '\(name.synopsisString)' does not take any value, but '\(value)' was specified."
+    String.localize("The option '%@' does not take any value, but '%@' was specified.", name.synopsisString, value)
   }
 
   func unexpectedExtraValuesMessage(values: [(InputOrigin, String)]) -> String?
@@ -368,10 +367,10 @@ extension ErrorMessageGenerator {
     case 1:
       // swift-format-ignore: NeverForceUnwrap
       // We know that `values` is not empty.
-      return "Unexpected argument '\(values.first!.1)'"
+      return String.localize("Unexpected argument '%@'", values.first!.1)
     default:
       let v = values.map { $0.1 }.joined(separator: "', '")
-      return "\(values.count) unexpected arguments: '\(v)'"
+      return String.localize("%lld unexpected arguments: '%@'", values.count, v)
     }
   }
 
@@ -393,14 +392,11 @@ extension ErrorMessageGenerator {
     }
 
     // Note that the RHS of these coalescing operators cannot be reached at this time.
-    let dupeString =
-      elementString(duplicate, arguments) ?? "position \(duplicate)"
-    let origString =
-      elementString(previous, arguments) ?? "position \(previous)"
+    let dupeString = elementString(duplicate, arguments) ?? String.localize("position %@", "\(duplicate)")
+    let origString = elementString(previous, arguments) ?? String.localize("position %@", "\(previous)")
 
     //TODO: review this message once environment values are supported.
-    return
-      "Value to be set with \(dupeString) had already been set with \(origString)"
+    return String.localize("Value to be set with %@ had already been set with %@", dupeString, origString)
   }
 
   func noValueMessage(key: InputKey) -> String? {
@@ -412,15 +408,13 @@ extension ErrorMessageGenerator {
     }
     switch possibilities.count {
     case 0:
-      return
-        "No value set for non-argument var \(key). Replace with a static variable, or let constant."
+      return String.localize("No value set for non-argument var %@. Replace with a static variable, or let constant.", "\(key)")
     case 1:
       // swift-format-ignore: NeverForceUnwrap
       // We know that `possibilities` is not empty.
-      return "Missing expected argument '\(possibilities.first!)'"
+      return String.localize("Missing expected argument '%@'", possibilities.first!)
     default:
-      let p = possibilities.joined(separator: "', '")
-      return "Missing one of: '\(p)'"
+      return String.localize("Missing one of: '%@'", possibilities.joined(separator: "', '"))
     }
   }
 
