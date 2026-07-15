@@ -235,7 +235,7 @@ internal struct HelpGenerator {
         case .nullary, .unary:
           allAndDefaultValues = String.localize("default: %@", defaultValue)
         case .optionalUnary:
-          allAndDefaultValues = String.localize("(default as flag: %@", defaultValue)
+          allAndDefaultValues = String.localize("(default as flag: %@)", defaultValue)
         }
 
       case (true, true):
