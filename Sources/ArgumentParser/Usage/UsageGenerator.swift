@@ -328,7 +328,7 @@ extension ErrorMessageGenerator {
 
   func missingValueForOptionMessage(origin: InputOrigin, name: Name) -> String {
     if let valueName = valueName(for: name) {
-      return String.localize("Missing value for '%@) <%@>'", name.synopsisString, valueName)
+      return String.localize("Missing value for '%@ <%@>'", name.synopsisString, valueName)
     } else {
       return String.localize("Missing value for '%@'", name.synopsisString)
     }
