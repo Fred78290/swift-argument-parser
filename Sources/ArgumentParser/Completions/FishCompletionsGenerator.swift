@@ -79,7 +79,7 @@ extension CommandInfoV0 {
         set -l token (commandline -t)
         string match -- '*/' $token
         set -l subdirs $token*/
-        printf %s\\n $subdirs
+        printf '%s\\n' $subdirs
     end
 
     function \(customCompletionFunctionName)
